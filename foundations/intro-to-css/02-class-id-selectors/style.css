@@ -1,0 +1,22 @@
+/* style.css */
+
+.odd-number {
+    background-color: rgb(252, 169, 165);
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+
+#second {
+    color: #0003fa;
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bigger-font {
+    font-size: 24px;
+}
+
+#fourth {
+    background-color: hsl(120, 100%, 75%);
+    /* font-size: 24px - Can omit, already in bigger-font class. Reduce duplicate code */
+    font-weight: bold;
+}
