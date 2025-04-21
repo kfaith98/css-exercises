@@ -20,6 +20,52 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px;
+
+/* official solution
+  display: flex;
+  gap: 16px;
+  padding: 16px; 
+*/
+}
+
+/* 
+  no separate CSS for .container, handled in .header
+  should be wrapped around the button element as well in order for flex style to work 
+*/
+
+.container {
+  display: flex;
+}
+
+.content {
+  margin: auto;
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 20px;
+
+/* official solution
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+*/
+}
+
+.text {
+  padding: 10px 0;
+
+/* official solution
+  no padding
+  margin-bottom: 16px;
+*/
 }
 
 .icon {
@@ -33,6 +79,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px;
+  flex-shrink: 0;
+
+/* official solution
+  no margin, only flex-shrink
+*/
 }
 
 .close-button {
