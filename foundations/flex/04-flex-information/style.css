@@ -1,5 +1,22 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center; /* centers text in overall page */
+} 
+
+.title, .plant-container { /* can be separate sections to avoid overlap */
+  display: flex;
+  justify-content: center;
+  margin: 32px; /* specifically margin-bottom if separate */
+  gap: 52px;
+}
+
+.barberry, .chilli, .pepper, .saffron {
+  max-width: 200px;
+  /* not needed
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
 }
 
 img {
